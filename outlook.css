@@ -1,0 +1,62 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        
+}
+body {
+   background: #FEFFE8;
+   position: relative;
+   display: grid;
+   justify-content: center;
+}
+.container{
+       width: 390px;
+       height: 330px;
+       background: #fff;
+       border: 1px solid black ;
+       box-shadow: 5px solid black;
+       
+       
+       
+}
+.logo{
+        padding: 1em;
+}
+form{
+        position: absolute;
+        justify-content: center;
+        place-items: center;
+        
+       
+       top: 150px;
+        left: 115px;
+        height: 320px;*/
+       
+}
+form p{
+        position: relative;
+        top: 13px;
+       
+}
+ #form2{
+        left: 390px;
+} 
+#back_btn{
+        cursor: pointer;
+}
+button{
+        cursor: pointer;
+        position: relative;
+        
+}
+input{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        background: transparent;
+        width: 100%;
+}
